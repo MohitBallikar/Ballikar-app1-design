@@ -1,5 +1,4 @@
 plugins {
-    id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.9'
 }
@@ -15,7 +14,7 @@ javafx{
     version = "17"
     modules = ['javafx.controls', 'javafx.fxml']
 }
-mainClassName = "$Application/org.openjfx.MainApp"
+mainClassName = "baseline.Application"
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
@@ -28,7 +27,3 @@ run{
     standardInput = System.in
 }
 
-application{
-    mainClassName = "baseline.Application"
-
-}
