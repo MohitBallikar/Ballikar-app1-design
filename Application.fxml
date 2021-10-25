@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" text="List GUI">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor>
+      </Label>
+       <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="858.0">
+       <menus>
+
+       <Menu mnemonicParsing="false" text="File">
+           <items>
+               <MenuItem fx:id="m1" mnemonicParsing="false" text="Open To Do List" />
+               <MenuItem fx:id="m2" mnemonicParsing="false" text="Save To Do List" />
+
+               <MenuItem fx:id="m3" mnemonicParsing="false" text="Exit" />
+           </items>
+       </Menu>
+           <Menu fx:id="mfind" mnemonicParsing="false" text="Find">
+               <items>
+                   <MenuItem mnemonicParsing="false" text="Search" />
+               </items>
+           </Menu>
+       </menus>
+       </MenuBar>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="400.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="400.0">
+            <Accordion prefHeight="147.0" prefWidth="386.0">
+                <panes>
+                    <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="485.0" text="TDL001">
+
+                        <HBox prefHeight="71.0" prefWidth="499.0" BorderPane.alignment="BASELINE_LEFT">
+                            <children>
+                                <Label text="  Description:">
+                                    <font>
+                                        <Font size="10.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="descriptionfield1" prefWidth="100.0" />
+                            </children>
+
+                            <children>
+                                <Label text="  Due Date:(YYYY-MM-DD)">
+                                    <font>
+                                        <Font size="10.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="datefield1" prefWidth="100.0" />
+                            </children>
+                        </HBox>
+
+                    </TitledPane>
+                    <TitledPane animated="false" prefHeight="186.0" prefWidth="462.0" text="TDL002">
+                    <HBox prefHeight="71.0" prefWidth="499.0" BorderPane.alignment="BASELINE_LEFT">
+                        <children>
+                            <Label text="  Description:">
+                                <font>
+                                    <Font size="10.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="descriptionfield2" prefWidth="100.0" />
+                        </children>
+
+                        <children>
+                            <Label text="   Due Date:(YYYY-MM-DD)">
+                                <font>
+                                    <Font size="10.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="datefield2" prefWidth="100.0" />
+                        </children>
+                    </HBox>
+                    </TitledPane>
+                    <TitledPane animated="false" layoutX="10.0" layoutY="36.0" text="TDL256">
+                        <HBox prefHeight="71.0" prefWidth="499.0" BorderPane.alignment="BASELINE_LEFT">
+                            <children>
+                                <Label text="  Description:">
+                                    <font>
+                                        <Font size="10.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="descriptionfield3" prefWidth="100.0" />
+                            </children>
+
+                            <children>
+                                <Label text="  Due Date:(YYYY-MM-DD)">
+                                    <font>
+                                        <Font size="10.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="datefield3" prefWidth="100.0" />
+                            </children>
+                        </HBox>
+                    </TitledPane>
+                </panes>
+            </Accordion>
+          </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="400.0">
+                <Accordion prefHeight="147.0" prefWidth="211.0">
+                    <panes>
+                        <TitledPane animated="false" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="500.0" text="TDI001">
+
+                            <HBox prefHeight="71.0" prefWidth="499.0" BorderPane.alignment="BASELINE_LEFT">
+                                <CheckBox mnemonicParsing="false" text="Complete    " />
+                                <children>
+                                    <Label text="    Description:">
+                                        <font>
+                                            <Font size="10.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="tdidescriptionfield2" prefWidth="100.0" />
+                                </children>
+
+                                <children>
+                                    <Label text="    Due Date:(YYYY-MM-DD)">
+                                        <font>
+                                            <Font size="10.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="tdidatefield2" prefWidth="100.0" />
+                                </children>
+                            </HBox>
+                        </TitledPane>
+                        <TitledPane animated="false" prefHeight="186.0" prefWidth="462.0" text="TDI002">
+                            <HBox prefHeight="71.0" prefWidth="499.0" BorderPane.alignment="BASELINE_LEFT">
+                                <CheckBox mnemonicParsing="false" text="Complete    " />
+                                <children>
+                                    <Label text="    Description:">
+                                        <font>
+                                            <Font size="10.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="tdidescriptionfield3" prefWidth="100.0" />
+                                </children>
+
+                                <children>
+                                    <Label text="    Due Date:(YYYY-MM-DD)">
+                                        <font>
+                                            <Font size="10.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="tdidatefield3" prefWidth="100.0" />
+                                </children>
+                            </HBox>
+                        </TitledPane>
+                        <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="1563.0" text="TDI003" />
+                        <TitledPane animated="false" prefHeight="47.0" prefWidth="284.0" text="TDI004" />
+                        <TitledPane animated="false" layoutX="10.0" layoutY="36.0" text="TDI256" />
+                    </panes>
+                </Accordion>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+       <SplitPane dividerPositions="0.29955456570155903" prefHeight="138.0" prefWidth="900.0">
+       <items>
+      <HBox prefHeight="158.0" prefWidth="331.0">
+          <Button mnemonicParsing="false" text="Add" />
+          <Button layoutX="441.0" layoutY="296.0" mnemonicParsing="false" text="Delete" />
+          <Button layoutX="435.0" layoutY="308.0" mnemonicParsing="false" text="Edit" />
+      </HBox>
+       <HBox prefHeight="100.0" prefWidth="200.0">
+           <Button mnemonicParsing="false" text="Add" />
+           <Button layoutX="441.0" layoutY="296.0" mnemonicParsing="false" text="Delete" />
+           <Button layoutX="435.0" layoutY="308.0" mnemonicParsing="false" text="Edit" />
+       </HBox>
+       </items>
+       </SplitPane>
+      <Button alignment="BASELINE_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Close" />
+
+   </children>
+</VBox>
